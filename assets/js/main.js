@@ -78,3 +78,13 @@ document.write(`${i.artist} <br> ${i.title}  <br> ${i.medium} <br> <br>`)
     document.write(`${myMusic[i].artist} <br> ${myMusic[i].title}  <br> ${myMusic[i].medium} <br> <br>`)
 
  }
+
+
+ // Bonus   alle years älter als 1975 ausgeben
+ myMusic.forEach((i) =>{
+    if (i.release_year > 1975){
+        document.write(`Älter als 1975 <br> ${i.artist} <br> ${i.title}  <br> ${i.medium} <br> <br>`)
+    }
+ })
+
+ 
