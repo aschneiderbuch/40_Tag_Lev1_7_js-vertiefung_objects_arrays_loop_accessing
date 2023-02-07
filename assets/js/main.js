@@ -87,4 +87,8 @@ document.write(`${i.artist} <br> ${i.title}  <br> ${i.medium} <br> <br>`)
     }
  })
 
- 
+ for (let i in myMusic){
+    if (myMusic[i].release_year > 1975){
+        document.write(`Älter als === 1975 === <br> ${myMusic[i].artist} <br> ${myMusic[i].title} <br> ${myMusic[i].medium} <br> <br> `)
+    }
+ }
