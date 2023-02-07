@@ -92,3 +92,15 @@ document.write(`${i.artist} <br> ${i.title}  <br> ${i.medium} <br> <br>`)
         document.write(`Älter als === 1975 === <br> ${myMusic[i].artist} <br> ${myMusic[i].title} <br> ${myMusic[i].medium} <br> <br> `)
     }
  }
+
+ myMusic.forEach((i) =>{
+    if (i.release_year > 1975){
+        console.log(`Älter als 1975 <br> ${i.artist} <br> ${i.title}  <br> ${i.medium} <br> <br>`)
+    }
+ })
+
+ for (let i in myMusic){
+    if (myMusic[i].release_year > 1975){
+        console.log(`Älter als === 1975 === <br> ${myMusic[i].artist} <br> ${myMusic[i].title} <br> ${myMusic[i].medium} <br> <br> `)
+    }
+ }
